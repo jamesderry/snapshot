@@ -48,14 +48,15 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     NSLog(@"delegate called.");
-    NSString *mediaType = (NSString *)[info objectForKey:UIImagePickerControllerMediaType];
+    //NSString *mediaType = (NSString *)[info objectForKey:UIImagePickerControllerMediaType]; //needed for movie
     
     image = (UIImage *)[info objectForKey:UIImagePickerControllerOriginalImage];
     NSLog(@"stored image.");
     
-    //self.imageView.image = image;
+    self.imageView.image = image; // needed for image only
     self.labelPhoto.hidden = YES;
     
+    /* needed for movie
     // Handle a movie capture
     if (CFStringCompare ((CFStringRef) mediaType, kUTTypeMovie, 0)
         == kCFCompareEqualTo) {
@@ -68,7 +69,7 @@
             UISaveVideoAtPathToSavedPhotosAlbum (
                                                  moviePath, nil, nil, nil);
         }
-    }
+    } */
     
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
@@ -79,7 +80,8 @@
         myPicker = [[UIImagePickerController alloc] init];
         myPicker.delegate = self;
         myPicker.sourceType = UIImagePickerControllerSourceTypeCamera;
-        NSString *mediaType = (__bridge NSString *)kUTTypeMovie;
+        NSString *mediaType = (__bridge NSString *)kUTTypeImage; //photo
+        //NSString *mediaType = (__bridge NSString *)kUTTypeMovie; //movie
         myPicker.mediaTypes = [NSArray arrayWithObjects:mediaType, nil];
         myPicker.showsCameraControls = YES;
         [self presentViewController:myPicker animated:YES completion:nil];
