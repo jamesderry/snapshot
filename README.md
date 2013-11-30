@@ -1,0 +1,4 @@
+snapshot
+========
+
+UIImagePickerController demo.
