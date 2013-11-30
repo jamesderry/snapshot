@@ -21,6 +21,7 @@
 		D00D49A31841CEB300085884 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00D49851841CEB300085884 /* UIKit.framework */; };
 		D00D49AB1841CEB300085884 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D00D49A91841CEB300085884 /* InfoPlist.strings */; };
 		D00D49AD1841CEB300085884 /* iOS3Lab5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D00D49AC1841CEB300085884 /* iOS3Lab5Tests.m */; };
+		D0D36FA0184297D4007EA879 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0D36F9F184297D4007EA879 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		D00D49A81841CEB300085884 /* iOS3Lab5Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOS3Lab5Tests-Info.plist"; sourceTree = "<group>"; };
 		D00D49AA1841CEB300085884 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D00D49AC1841CEB300085884 /* iOS3Lab5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS3Lab5Tests.m; sourceTree = "<group>"; };
+		D0D36F9D1842970F007EA879 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		D0D36F9F184297D4007EA879 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0D36FA0184297D4007EA879 /* MobileCoreServices.framework in Frameworks */,
 				D00D49841841CEB300085884 /* CoreGraphics.framework in Frameworks */,
 				D00D49861841CEB300085884 /* UIKit.framework in Frameworks */,
 				D00D49821841CEB300085884 /* Foundation.framework in Frameworks */,
@@ -101,6 +105,8 @@
 		D00D49801841CEB300085884 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D0D36F9F184297D4007EA879 /* MobileCoreServices.framework */,
+				D0D36F9D1842970F007EA879 /* AssetsLibrary.framework */,
 				D00D49811841CEB300085884 /* Foundation.framework */,
 				D00D49831841CEB300085884 /* CoreGraphics.framework */,
 				D00D49851841CEB300085884 /* UIKit.framework */,
@@ -460,6 +466,7 @@
 				D00D49B21841CEB300085884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D00D49B31841CEB300085884 /* Build configuration list for PBXNativeTarget "iOS3Lab5Tests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				D00D49B51841CEB300085884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
